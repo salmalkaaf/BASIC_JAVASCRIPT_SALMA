@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJECT IN JAVASCRIPT</title>
+</head>
+<body>
+    <script>
+        var person={
+            name:"Ama",
+            age:"17",
+            favColor: "red",
+            height: 160,
+            weight: 41
+        }
+
+        alert("Nama = "+person.name + "\nUmur= "+ person.age+ "\nWarna Fav= "+favColor)
+        if(person.weight > 60 ){ alert("overweight"); }
+        else { alert("fit")}
+
+        function tinggi(){
+        tinggi2= person.height-100
+        tinggi3= tinggi2*100/100
+        }
+        tinggi3();
+    </script>
+</body>
+</html>
