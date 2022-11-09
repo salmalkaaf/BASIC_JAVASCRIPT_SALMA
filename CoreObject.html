@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORE OBJECTS</title>
+</head>
+<body>
+    <script>
+        //core objects
+
+/*
+        //lesson 3.7
+        var courses = new Array ('menjahit', 'berenang', 'memasak')
+        document.write(courses[1]);
+
+        courses[1]='menyanyi'
+        document.write(courses[1])
+*/
+        //===========================================================================================================================================
+/*
+        //lesson 3.8
+        var courses = new Array(3)//you can empty the braces if you want (you call it argument), in here its 3because the total of the array is 3;
+        courses[0] = "menjahit";
+        courses[1] = "berenang";
+        courses[2] = "memasak";
+        courses[3] = "main gim";
+
+        document.write(courses[2]);
+
+        //other simple way
+            var courses = ['sew','swim','cook','play game']
+*/        
+        //===========================================================================================================================================
+/* 
+        //lesson 3.9
+
+        //1
+        var menu =['mie ayam','mie goreng','bakso','nasi goreng']
+        document.write(menu.lengt)    
+*/
+/*
+        //2
+        var courses = ['sew','swim','cook','play game']
+        var menu =['mie ayam','mie goreng','bakso','nasi goreng']
+        var concatArray = courses.concat(menu);
+        document.write(concatArray)
+*/
+/*
+        //lesson
+        
+        // var person = []; 
+        // person["name"] = "John"; // you could also write it var = a person["name"] = "John";
+        // person["age"] = 32;
+        // person["age"] = 32;
+        // document.write(person["age"]);
+        // document.write(person["age"]);
+        // document.write(person["age"]);
+        // document.write(person["age"]);
+
+        var person = {
+            name: 'john',
+            age: 32,
+        }
+
+   
+        var a = person["name"] = "John"; 
+        var b = person["age"] = 32; 
+        // var c = new person1('john',30)
+        document.write(a)
+        document.write(b)
+        document.write(person["name"]);
+        document.write(person["age"]);
+        // document.write(c)
+        */
+
+        // document.write(Math.PI);
+        // document.write(Math.sqrt(81));
+        // var random = Math.ceil(Math.random()*10)
+        // document.write(random+'<br>')
+
+        
+        var year = 2005
+        //  document.write(calcCent(year));
+         console.log(calcCent(year));        
+        
+        function calcCent(year){
+        return Math.ceil((year/100))
+        }
+    </script>
+</body>
+</html>

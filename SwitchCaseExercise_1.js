@@ -46,4 +46,5 @@ switch (pilihan){
 
 //cara 3 Ternary one line
 var pilihan = 1;
-console.log(pilihan==1?"Light":(pilihan==2?"Dark":(pilihan==3?"Nocturne":(pilihan==4?"Terminal":"Indigo"))));
+console.log(pilihan==1?"Light":(pilihan==2?"Dark":(pilihan==3?"Nocturne":
+(pilihan==4?"Terminal":"Indigo"))));

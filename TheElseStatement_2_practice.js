@@ -5,7 +5,7 @@
 // else {
 //     console.log("not this time");
 // }
-
+console.log("for numbers that are bigger than 2.45");
 var height = 3
 if (height>2.45) {
 console.log("new record");
