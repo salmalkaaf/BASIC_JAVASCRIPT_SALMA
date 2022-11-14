@@ -81,13 +81,68 @@
         // document.write(random+'<br>')
 
         
-        var year = 2005
-        //  document.write(calcCent(year));
-         console.log(calcCent(year));        
+        // var year = 2005
+        // //  document.write(calcCent(year));
+        //  console.log(calcCent(year));        
         
-        function calcCent(year){
-        return Math.ceil((year/100))
-        }
+        // function calcCent(year){
+        // return Math.ceil((year/100))
+        // }
+
+        // prompt sqrt
+        // var n = prompt("Masukan bilangan", "");
+        // var answer = Math.sqrt(n);
+        // alert("Nilai dari akar kuadrat bilangan " + n + " adalahs " + answer);
+
+        //rumus tabung (diameter)
+        // var diameter = prompt("Masukan bilangan diameter :","" );
+        // var tinggi = prompt("Masukan bilangan tinggi :" ,"");
+        // var jumlah = (Math.PI*(diameter*tinggi));
+        // alert("Maka volume tabung tersebut adalah :" + Math.ceil(jumlah));
+
+        // //rumus tabung (jari jari)
+        // var r = prompt("Masukan bilangan jari-jari :","" );
+        // var t = prompt("Masukan bilangan tinggi :" ,"");
+        // var answer = (Math.PI*(Math.pow(r,2)*t));
+        // alert("Maka volume tabung tersebut adalah :" + Math.ceil(answer));
+
+        //lesson 4.2
+//         function myAlert() {
+//         alert("Hello Worldldld");
+//         }
+//         setInterval(myAlert, 3000);
+         
+        //cara 1
+        // function printTime() {
+        // var d = new Date();
+        // var hours = d.getHours();
+        // var mins = d.getMinutes();
+        // var secs = d.getSeconds();
+        // document.body.innerHTML = hours+":"+mins+":"+secs;
+        // }
+        // setInterval(printTime, 1000);
+
+        //cara 2
+        // var d1 = new Date();
+        // var hours = d.getHours();
+
+        // document.write(hours)
+
+        var year = 2005;
+        var month = 2; //remember javascript starts from 0, so 0 = january
+        var day = 17;
+        
+        document.write(getWeekDay(year, month, day)); 
+        
+
+        function getWeekDay(year, month, day) {
+        var names = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var date = new Date(year, month, day);
+        var day = date.getDay()
+        return names[day]
+}
     </script>
+
+
 </body>
 </html>
