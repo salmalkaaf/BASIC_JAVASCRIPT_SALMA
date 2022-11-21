@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM JAVASCRIPT</title>
+</head>
+<body>
+    <!-- 
+
+    //finds element by id
+    document.getElementById(id) 
+
+    //finds elements by class name
+    document.getElementsByClassName(name) 
+
+    //finds elements by tag name
+    document.getElementsByTagName(name)
+
+    -->
+
+    <!-- <p id="p1"></p>
+    <p class="p2"></p> -->
+
+<!--
+    <p class = "paragraph">
+        LOREMMMMM
+    </p>
+    <p class = "paragraph">
+        LOREMMMMM
+    </p>
+    <p class = "paragraph">
+        LOREMMMMM
+    </p>
+-->
+    <div id="demo"> </div>
+    <script>
+        // example
+        // getElementById(p1)
+        // getElementsByClassName
+        // getElementsByTagName
+
+        // var elem = document.getElementByID('p1');
+        // elem.innerHTML = "Hello World";
+        // console.log (elem);
+        // document.getElementsByClassName()
+        // document.getElementsByTagName()
+
+        //=============================================
+        //get Element Id
+/*        
+        var demo = document.getElementById('demo');
+        demo.style.textAlign = "center"
+
+        setInterval(function(){
+            demo.innerText = 'Hewo Worldldl'
+            demo.style.backgroundColor = 'blue'
+            demo.style.color = 'white'
+
+        setTimeout(function(){
+            demo.innerText = 'Bye Worldldl'
+            demo.style.backgroundColor = 'gold'
+            demo.style.padding = '10px'
+            demo.style.color = 'black'
+        },500)
+
+        },1000)
+*/
+        //===============================================
+        //get element class
+/*
+        var paragraph = document.getElementsByClassName('paragraph')
+        console.log(paragraph.length)
+        // for (var x=0; x<paragraph.lenght,x++){
+        //     paragraph[x].style.backgroundColor="black"
+        //     paragraph[x].style.color="white"
+        // }
+        setInterval(function(){
+            paragraph[0].style.backgroundColor = 'blue'
+            paragraph[1].style.backgroundColor = 'red'
+            paragraph[2].style.backgroundColor = 'green'
+        },1000) 
+        setTimeout(function(){
+            for (varx=0; x<paragraph.length;x++){
+                paragraph[x].style.backgroundColor='yellow'
+                paragraph[x].style.colorolor='white'
+            }
+        },500)
+*/
+        //==============================================
+        //addind or removing elements
+
+        //calling the function in window.onload to make sure the HTML is loaded
+        window.onload = function() {
+        //creating a new paragraph
+        var p = document.createElement("p");
+        var node = document.createTextNode("Some new text");
+        //adding the text to the paragraph
+        p.appendChild(node);
+
+        var div = document.getElementById("demo");
+        //adding the paragraph to the div
+        div.appendChild(p);
+        };
+    </script>
+</body>
+</html>

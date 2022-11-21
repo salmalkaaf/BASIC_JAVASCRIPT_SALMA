@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Removing Element</title>
+</head>
+<body>
+    <div id="demo">
+        <p id="p1">This is a paragraph.</p>
+        <p id="p2">This is another paragraph.</p>
+    </div>
+    <!-- <div id="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Dignissimos ipsa praesentium dolorem accusamus qui facere beatae temporibus 
+         corrupti aperiam est ullam porro sequi, provident, autem maiores. Animi 
+         explicabo dolore autem temporibus molestiae, expedita quam blanditiis nulla
+          odit. Dicta, dolorem vero.
+    </div>  -->
+    <!-- <p id="list">awoowow</p> -->
+    <script>
+    //calling the function in window.onload to make sure the HTML is loaded
+    // window.onload = function() {
+    //     var p = document.createElement("p");//creating a new paragraph
+    //     var nama = document.createTextNode("My Name is Salma Alkaaf");
+    //     p.appendChild(nama);//adding the text to the paragraph
+
+    //     var div = document.getElementById("lorem");
+    //     div.appendChild(p); //adding the paragraph to the div
+    // };
+
+    // //====================================================================
+    // //another example of adding/creating? new child
+    // var el = document.createElement("li");
+    // var txt = document.createTextNode("B");
+    // el.appendChild(txt);
+    // var ul = document.getElementById("list");
+    // ul.appendChild(el);
+
+    // //====================================================================
+    // //remove child
+    // window.onload = function() {
+    // var parent = document.getElementById("demo");
+    // var child = document.getElementById("p1");
+    // parent.removeChild(child);
+    // };
+
+    //===================================================================
+    //replacing
+    //calling the function in window.onload to make sure the HTML is loaded
+    window.onload = function() {
+    var p = document.createElement("p");
+    var node = document.createTextNode("This is new");
+    p.appendChild(node);
+
+    var parent = document.getElementById("demo");
+    var child = document.getElementById("p2");
+    parent.replaceChild(p, child);
+    }; 
+
+    </script>
+</body>
+</html>
