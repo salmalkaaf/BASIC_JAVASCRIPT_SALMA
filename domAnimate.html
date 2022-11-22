@@ -6,37 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM ANIMATION</title>
     <style>
-        #container {
-    width: 200px;
-    height: 200px;
+        
+    #container {
+    width: 500px;
+    height: 500px;
     background: rgb(235, 60, 60);
     position: relative;
-}
-#box {
-    width: 50px;
-    height: 50px;
+    border-radius: 100px;
+    /* left: 315px;
+    position: absolute;
+    top: 143px; */
+    }
+
+    #circle {
+    width: 150px;
+    height: 150px;
     background: rgb(83, 90, 90);
     position: absolute;
-}
-    </style>
-</head>
-<body>
-    <div id="container">
-        <div id="box"></div>
-    </div>
-    <script>
-        
-        // starting position
-var pos = 0; 
-//our box element
-var box = document.getElementById("box");
+    border-radius: 100px;
+    /* transform: rotate(-120deg) translateY(-150px) rotate(120deg); */
+    }
 
-function move() {
-  pos += 1;
-  box.style.left = pos+"px"; //px = pixels
-  
-}
-var t = setInterval(move, 100); 
+    </style>
+    </head>
+
+    <body>
+    <div id="container">
+        <div id="circle"></div>
+    </div>
+
+    <script>
+    window.onload = function() {
+        var pos = 0; 
+        //our box element
+        var box = document.getElementById('circle');
+        var t = setInterval(move, 5);
+    
+        // function move() {
+        //     if(pos == 350) {
+        //         pos += 1;
+        //         box.style.left = pos+'px';
+        //     }
+        //     else if(pos >= 350){
+        //         clearInterval(t);
+        //     }   
+        //     else{
+        //         pos += 1;
+        //         box.style.top = pos+'px';
+        //     }
+        // }
+        function move() {
+            if(pos >= 350) {
+                clearInterval(t);
+            }
+            else{
+                pos += 1;
+                box.style.left = pos+'px';
+            }
+        }
+        // function move2() {
+        //     if(pos >= 350) {
+        //         clearInterval(t);
+        //     }
+        //     else{
+        //         pos += 1;
+        //         box.style.top = pos+'px';
+        //     }
+        // }
+    };
+
+    // if(pos >= 350) {
+    //             pos += 1;
+    //             box.style.top = pos+'px';
+    //         }
+    //         else {
+    //             pos += 1;
+    //             box.style.top = pos+'px';;
+    //         };   
+   
     </script>
+
+
 </body>
 </html>
